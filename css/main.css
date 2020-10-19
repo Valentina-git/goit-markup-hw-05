@@ -1,0 +1,214 @@
+/* HERO */
+.overlay {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../images/hw4/hero/герой.jpg), url(../images/hw4/hero/Img\ Overlay.jpg), url(../images/hw4/hero/Bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.hero {
+	text-align: center;
+	letter-spacing: 0.06em;
+	background-color: #2f303a;
+}
+.hero-title {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 572px;
+
+	color: var(--primary-white-color);
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-transform: uppercase;
+}
+.btn {
+	margin-top: 30px;
+	border-radius: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 32px;
+	padding-left: 32px;
+
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: inherit;
+}
+
+/* Features */
+.section {
+	padding-bottom: 94px;
+	padding-top: 94px;
+}
+.section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+	text-align: center;
+
+	color: var(--title-text-color);
+	font-size: 36px;
+	line-height: 1.17;
+}
+.feature-list {
+	display: flex;
+}
+.feature-item::before {
+	display: block;
+	content: "";
+	margin-bottom: 30px;
+	border-radius: 4px;
+	height: 120px;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f5f4fa;
+}
+.icon-antena::before {
+	background-image: url(../images/hw4/feature/antenna.svg);
+}
+.icon-clock::before {
+	background-image: url(../images/hw4/feature/clock.svg);
+}
+.icon-diagr::before {
+	background-image: url(../images/hw4/feature/diagr.svg);
+}
+.icon-astro::before {
+	background-image: url(../images/hw4/feature/astro.svg);
+}
+.feature-item {
+	flex-basis: calc((100% - 90px) / 4);
+}
+.feature-list .feature-item + .feature-item {
+	margin-left: 30px;
+}
+.feature-list .feature-title {
+	margin-bottom: 10px;
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+.feature-list .feature-indent {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+}
+
+/* Чем мы занимаемся */
+.plan {
+	padding-top: 0;
+}
+.plan-list {
+	display: flex;
+}
+.plan-item {
+	flex-basis: calc((100% - 60px) / 3);
+}
+.plan-list .plan-item + .plan-item {
+	margin-left: 30px;
+}
+
+/* Наша команда */
+.work {
+	background-color: #f5f4fa;
+}
+.work-list {
+	display: flex;
+	text-align: center;
+}
+.work-item {
+	flex-basis: calc((100% - 90px) / 4);
+	background-color: var(--primary-white-color);
+}
+.work-list .work-item + .work-item {
+	margin-left: 30px;
+}
+.work-list .work-item:hover {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+.work-image {
+	margin-bottom: 30px;
+}
+.work-title.work-indent {
+	font-size: 16px;
+	line-height: 1.19px;
+}
+.work-list .work-title {
+	margin-bottom: 10px;
+
+	color: var(--title-text-color);
+	font-size: inherit;
+	font-weight: 500;
+}
+.work-list .work-indent {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-weight: 400;
+}
+
+/* Social */
+.social-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.social-list__link {
+	display: flex;
+	align-items: center;
+	border-radius: 50%;
+
+	width: 44px;
+	height: 44px;
+}
+.social-list .social-list__item + .social-list__item {
+	margin-left: 10px;
+}
+.social-list__svg {
+	fill: #afb1b8;
+}
+.social-list__link:hover {
+	background-color: var(--accent-color);
+}
+.social-list__link:hover .social-list__svg {
+	fill: var(--primary-white-color);
+}
+
+/* Постоянные клиенты  */
+.clients {
+	display: flex;
+}
+.clients-link {
+	display: flex;
+	width: 170px;
+	height: 90px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	align-items: center;
+	fill: #afb1b8;
+}
+.clients-item {
+	justify-content: space-between;
+}
+.clients .clients-item + .clients-item {
+	margin-left: 30px;
+}
+
+.clients-link:hover {
+	border-color: var(--accent-color);
+}
+.clients-link:hover .clients-list__svg {
+	fill: var(--accent-color);
+}

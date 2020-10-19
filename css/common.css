@@ -1,0 +1,271 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited,
+a:hover {
+	text-decoration: none;
+}
+ul,
+li {
+	list-style: none;
+}
+
+/* Цвет основного текста #212121 */
+/* Вторичный цвет текста #757575 */
+/* Акцент #2196F3 */
+
+/* белый #FFFFFF */
+/* белый футер  rgba(255, 255, 255, 0.6); */
+
+/* главный цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона футера, hero #2F303A */
+
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--primary-white-color: #ffffff;
+}
+body {
+	background-color: var(--primary-bg-color);
+	color: var(--primary-text-color);
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
+}
+
+.address {
+	font-style: normal;
+}
+
+/* Page-header */
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.main-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navigation {
+	display: flex;
+	align-items: center;
+}
+
+/* Logo */
+.logo {
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+}
+.logo:hover {
+	color: var(--accent-color);
+}
+.logo-header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+
+	color: var(--title-text-color);
+}
+.accent-web {
+	color: var(--accent-color);
+}
+
+/* SITE-NAV */
+.list {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+.site-nav {
+	display: flex;
+	margin-left: 93px;
+}
+.site-nav .item + .item {
+	margin-left: 50px;
+}
+.site-contacts .item {
+	align-items: center;
+}
+.site-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--title-text-color);
+}
+
+/* SITE-CONTACTS */
+.site-contacts {
+	display: flex;
+	margin-right: auto;
+}
+.site-contacts .item + .item {
+	margin-left: 50px;
+}
+.site-contacts .contact {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--primary-text-color);
+}
+
+.icon-mail {
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	background-size: contain;
+}
+.icon-tell {
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
+	background-size: contain;
+}
+
+.contact:hover .icon-mail,
+.contact:hover .icon-tell {
+	fill: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-contacts .contact:hover,
+.site-nav .link.current {
+	color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	background-color: #2f303a;
+}
+
+.logo-footer {
+	display: block;
+	margin-bottom: 20px;
+
+	color: var(--primary-white-color);
+	font-style: normal;
+}
+
+.list-footer {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+}
+.list-footer :hover {
+	color: var(--accent-color);
+}
+.full-white {
+	color: var(--primary-white-color);
+}
+.part-white {
+	color: rgba(255, 255, 255, 0.6);
+}
+.footer-item {
+	margin-bottom: 9px;
+}
+.footer-item:last-child {
+	margin-bottom: 0;
+}
+
+.footer .block {
+	display: flex;
+	align-items: baseline;
+}
+.join-block {
+	display: block;
+	margin-left: 70px;
+
+	width: 206px;
+	height: 80px;
+}
+.join {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.143px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+
+	color: var(--primary-white-color);
+}
+.join-list {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.join-link {
+	display: flex;
+	align-items: center;
+	border-radius: 50%;
+
+	width: 44px;
+	height: 44px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.join-list .join-item + .join-item {
+	margin-left: 10px;
+}
+.join-svg {
+	fill: var(--primary-white-color);
+}
+.join-link:hover {
+	background-color: var(--accent-color);
+}
+.join-link:hover .join-svg {
+	fill: var(--primary-white-color);
+}
