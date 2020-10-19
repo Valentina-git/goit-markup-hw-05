@@ -28,34 +28,37 @@
           <span class="accent-web">Web</span>Studio</a>
 
         <!-- Site  -->
-        <ul class="site-nav list">
-          <li class="item">
-            <a class="link current" href="./index.html" >
-              Студия</a></li>
-          <li class="item">
-            <a class="link" href="./portfolio.html">
-              Портфолио</a></li>
-          <li class="item">
-            <a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <address class="address">
-      <ul class="site-contacts list">
+      <ul class="site-nav list">
         <li class="item">
-          <a class="contact" 
-          href="mailto:info@devstudio.com">
-          <svg class="icon-mail">
-            <use href="./images/sprite.svg#icon-mail"></use>
-          </svg>
-          info@devstudio.com</a> </li>
+          <a class="site-nav__link current" 
+          href="./index.html">
+            Студия</a></li>
         <li class="item">
-          <a class="contact" href="tel:+380961111111">
-            <svg class="icon-tell">
-              <use href="./images/sprite.svg#icon-tell"></use>
-            </svg>
-            +38 096 111 11 11</a> </li>
+          <a class="site-nav__link" 
+          href="./portfolio.html">
+            Портфолио</a></li>
+        <li class="item">
+          <a class="site-nav__link" href="">Контакты</a></li>
       </ul>
+      </nav>
+      
+      <address class="address">
+        <ul class="site-contacts list">
+          <li class="item">
+            <a class="site-contact__link" 
+            href="mailto:info@devstudio.com">
+              <svg class="icon-mail">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a> </li>
+          <li class="item">
+            <a class="site-contact__link" 
+            href="tel:+380961111111">
+              <svg class="icon-tell">
+                <use href="./images/sprite.svg#icon-tell"></use>
+              </svg>
+              +38 096 111 11 11</a> </li>
+        </ul>
       </address>
       </div>
   </header>
@@ -67,7 +70,7 @@
     <div class="overlay">
     <div class="container">  
       <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn">Заказать услугу</button>
+        <button class="btn" data-modal-open>Заказать услугу</button>
         </div>
         </div>
     </section>
@@ -112,27 +115,31 @@
     <section class="section plan">
         <div class="container">    
         <h2 class="section-title">Чем мы занимаемся</h2>
+
         <ul class="plan-list">
           <li class="plan-item">
-            <img
+            <img class="plan-image"
               src="./images/img1.jpg"
               alt="Мужчина пишет код с клавиатуры"
               width="370" height="294"
             />
+            <p class="plan-text">Десктопные приложения</p>
           </li>
           <li class="plan-item">
-            <img
+            <img class="plan-image"
               src="./images/img2.jpg"
               alt="Девушка создает интерфейс как на телефоне"
               width="370" height="294"
             />
+            <p class="plan-text">Мобильные приложения</p>
           </li>
           <li class="plan-item">
-            <img
+            <img class="plan-image"
               src="./images/img3.jpg"
               alt="Выбор цветовой палитры"
               width="370" height="294"
             />
+            <p class="plan-text">Дизайнерские решения</p>
           </li>
         </ul>
         </div>
@@ -145,20 +152,21 @@
         
       <ul class="work-list">
         <li class="work-item">
-          <img class="work-image" src="./images/игорь.jpg" alt="фото мужчины в очках" 
-            width="270" height="260" />
+          <img class="work-image" src="./images/игорь.jpg" 
+          alt="фото мужчины в очках" 
+          width="270" height="260" />
             <h3 class="work-title">Игорь Демьяненко</h3>
             <p class="work-indent">Product Designer</p>
 
           <ul class="social-list">
           <li class="social-list__item">
-                <a href="" class="social-list__link">
-                  <svg class="social-list__svg"
-                  widht="20" height="20" >
-                    <use href="./images/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+            <a href="" class="social-list__link">
+              <svg class="social-list__svg"
+                    widht="20" height="20" >
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
 
               <li class="social-list__item">
                 <a href="" class="social-list__link">
@@ -324,7 +332,8 @@
   <section class="section">
     <div class="container">
     <h1 class="section-title">Постоянные клиенты</h1>
-      <ul class="clients">
+      
+    <ul class="clients">
         <li class="clients-item"> 
           <a href="" class="clients-link">
             <svg class="clients-list__svg" widht="24" height="50">
@@ -375,6 +384,7 @@
   <footer class="footer">
     <div class="container block">
 
+  <!--address-block -->
     <div class="address-block">
     <!-- Logo-footer -->
     <a href="" class="logo logo-footer">
@@ -383,19 +393,17 @@
     <address class="address">
         <ul class="list-footer">
           <li class="footer-item">
-            <a href="https://goo.gl/maps/Jzkq81QmXv9pryJU8" 
-            target="_blank" class="full-white">
-              г. Киев, пр-т Леси Украинки, 26 
+            <a class="footer-link full-white" href="https://goo.gl/maps/Jzkq81QmXv9pryJU8" target="_blank">
+              г. Киев, пр-т Леси Украинки, 26
             </a>
           </li>
           <li class="footer-item">
-            <a href="mailto:info@example.com" 
-            class="part-white">
+            <a class="footer-link" href="mailto:info@example.com">
               info@example.com
             </a>
           </li>
           <li class="footer-item">
-            <a href="tel:+380991111111" class="part-white">
+            <a class="footer-link" href="tel:+380991111111">
               +38 099 111 11 11
             </a>
           </li>
@@ -403,6 +411,7 @@
     </address>
     </div>
 
+    <!-- Присоединяйтесь -->
     <div class="join-block">
       <p class="join">Присоединяйтесь</p>
       <ul class="join-list">
@@ -444,5 +453,18 @@
   </div>
       
     </footer>
+
+    <!-- Модальное окно -->
+  <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-modal" data-modal-close>
+      <svg class="icon-cross">
+        <use href="./images/hw5/sprite-cross.svg#icon-cross"></use>
+      </svg>
+    </button>
+  </div>
+  </div>
+  <script src="./js/modal.js"></script>
+
   </body>
 </html>
